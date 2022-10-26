@@ -1,4 +1,6 @@
-package com.yandex.practicum.todo;
+package com.yandex.practicum.task;
+
+import com.yandex.practicum.task.Task;
 
 import java.util.ArrayList;
 
@@ -8,16 +10,16 @@ public class Epic extends Task {
     public Epic(String name, String status, int id, String description) {
         super(name, status, id, description);
     }
+
     public void addSubTaskId(int subTaskId) {
         this.subTaskIds.add(subTaskId);
-    }
-    public void showSubTasksIds(){
-        for (int i : subTaskIds) {
-            System.out.println(i);
-        }
     }
 
     public ArrayList<Integer> getSubTaskIds() {
         return subTaskIds;
+    }
+
+    public void removeSubtaskIdFromEpic(Integer id) {
+        subTaskIds.remove(id);
     }
 }

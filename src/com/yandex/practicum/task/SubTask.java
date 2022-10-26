@@ -1,9 +1,9 @@
-package com.yandex.practicum.todo;
+package com.yandex.practicum.task;
 
-public class SubTask extends Epic{
+public class SubTask extends Task {
    private int epicId;
 
-   public SubTask(String name, String status, int id, String description) {
+   public SubTask(String name, String status, int id, int epicId, String description) {
       super(name, status, id, description);
    }
 

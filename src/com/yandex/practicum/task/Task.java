@@ -1,4 +1,4 @@
-package com.yandex.practicum.todo;
+package com.yandex.practicum.task;
 
 public class Task {
     private String name;
