@@ -45,13 +45,8 @@ public class TaskManager {
             else if (counter == newCount || counter == 0) {
                 epic.setStatus("NEW");
             }
-            else {
-                System.out.println("updateEpicStatus goes wrong!");
-            }
-
         }
     }
-
 
     public String getListEpicSubTasks(int epicId) {
         StringBuilder result = new StringBuilder();
