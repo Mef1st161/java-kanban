@@ -1,7 +1,5 @@
 package com.yandex.practicum.task;
 
-import com.yandex.practicum.task.Task;
-
 import java.util.ArrayList;
 
 public class Epic extends Task {
@@ -21,5 +19,9 @@ public class Epic extends Task {
 
     public void removeSubtaskIdFromEpic(Integer id) {
         subTaskIds.remove(id);
+    }
+
+    public void clearSubtaskIds() {
+        subTaskIds.clear();
     }
 }
